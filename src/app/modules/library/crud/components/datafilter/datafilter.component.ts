@@ -43,8 +43,8 @@ import {SubmitForm} from "../../../form/components/form/submit.form";
             </p-dropdown>
           </div>
           <div class="text-center gap-2 col-12">
-            <button type="submit" class="btn btn-primary" (click)="submit()">Filter</button>&nbsp;
-            <button type="reset" class="btn btn-secondary" (click)="form.reset()">Reset</button>
+            <button type="submit" class="btn btn-primary" (click)="submit()" i18n>Filter</button>&nbsp;
+            <button type="reset" class="btn btn-secondary" (click)="form.reset()" i18n>Reset</button>
           </div>
         </form>
       </div>

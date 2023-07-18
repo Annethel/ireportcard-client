@@ -10,56 +10,56 @@ import {SubmitForm} from "../form/submit.form";
   selector: 'app-admin-register-form',
   styleUrls: ['./admin-register-form.component.css'],
   template: `
-    <h5 class="card-title">Register Admin Form</h5>
+    <h5 class="card-title" i18n>Register Admin Form</h5>
 
     <!-- Multi Columns Form -->
     <form class="row g-3" [formGroup]="form" (submit)="submit()">
       <div class="col-md-6">
-        <label for="firstname" class="form-label">First Name</label>
+        <label for="firstname" class="form-label" i18n>First Name</label>
         <input type="text" class="form-control" formControlName="firstname" id="firstname">
       </div>
       <div class="col-md-6">
-        <label for="lastname" class="form-label">Last Name</label>
+        <label for="lastname" class="form-label" i18n>Last Name</label>
         <input type="text" class="form-control" formControlName="lastname" id="lastname">
       </div>
       <div class="col-md-6">
-        <label for="email" class="form-label">Email</label>
+        <label for="email" class="form-label" i18n>Email</label>
         <input type="email" class="form-control" formControlName="email" id="email" #email>
       </div>
       <div class="col-md-6">
-        <label for="username" class="form-label">Username</label>
+        <label for="username" class="form-label" i18n>Username</label>
         <input type="text" class="form-control" id="username" [value]="usernameFromEmail(email.value)" disabled>
       </div>
       <div class="col-md-6">
-        <label for="password" class="form-label">Password</label>
+        <label for="password" class="form-label" i18n>Password</label>
         <input type="password" class="form-control" formControlName="password" id="password">
       </div>
       <div class="col-md-6">
-        <label for="password-repeat" class="form-label">Repeat Password</label>
+        <label for="password-repeat" class="form-label" i18n>Repeat Password</label>
         <input type="password" class="form-control" id="password-repeat">
       </div>
       <div class="col-6">
-        <label for="address" class="form-label">Address</label>
+        <label for="address" class="form-label" i18n>Address</label>
         <input type="text" class="form-control" formControlName="address" id="address" placeholder="ENS Street">
       </div>
       <div class="col-6">
-        <label for="address2" class="form-label">Address 2</label>
+        <label for="address2" class="form-label" i18n>Address 2</label>
         <input type="text" class="form-control" formControlName="address2" id="address2" placeholder="Cap Stone, R19">
       </div>
       <div class="col-md-6">
-        <label for="phone" class="form-label">Phone</label>
+        <label for="phone" class="form-label" i18n>Phone</label>
         <input type="text" class="form-control" formControlName="phone" id="phone">
       </div>
       <div class="col-md-4">
-        <label for="inputState" class="form-label">Gender</label>
+        <label for="inputState" class="form-label" i18n>Gender</label>
         <select id="inputState" class="form-select form-control" formControlName="phone">
-          <option selected disabled>Choose...</option>
+          <option selected disabled i18n>Choose...</option>
           <option *ngFor="let g of genders">{{g | titlecase}}</option>
         </select>
       </div>
       <div class="text-center gap-2">
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="reset" class="btn btn-secondary" (click)="form.reset()">Reset</button>
+        <button type="submit" class="btn btn-primary" i18n>Submit</button>
+        <button type="reset" class="btn btn-secondary" (click)="form.reset()" i18n>Reset</button>
       </div>
     </form>
   `

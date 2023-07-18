@@ -16,7 +16,7 @@ export class OrgMembersComponent implements OnInit {
 
   ngOnInit(): void {
     this._userService.getAllByOrganisation().subscribe(res => {
-      this.table = UserUtil.createTable(res, "Members");
+      this.table = UserUtil.createTable(res, $localize `Members`);
     })
   }
 }

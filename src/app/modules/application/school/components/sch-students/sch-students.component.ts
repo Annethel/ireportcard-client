@@ -27,7 +27,7 @@ export class SchStudentsComponent implements DataComponent<UserPayload[]> {
   });
   dataFilterForm: FormModel;
 
-  title = "Students";
+  title =$localize `Students`;
   data: UserPayload[] = [];
   protected readonly Role = Role;
 
@@ -35,7 +35,7 @@ export class SchStudentsComponent implements DataComponent<UserPayload[]> {
     this.dataFilterForm = new FormModel({
       formControls: [
         new FormControlModel({
-          label: "Gender",
+          label:$localize `Gender`,
           name: "gender",
           type: "select",
           values: FormControlValue.ofArray(genderValues)

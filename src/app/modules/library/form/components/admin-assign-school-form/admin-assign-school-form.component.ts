@@ -7,17 +7,17 @@ import {Id} from "../../../../../models/entity/base/base.entity";
   selector: 'app-admin-assign-school-form',
   styleUrls: ['./admin-assign-school-form.component.css'],
   template: `
-    <h5 class="card-title">Register Admin Form</h5>
+    <h5 class="card-title" i18n>Register Admin Form</h5>
     <form class="row g-3" [formGroup]="form" (submit)="submit()">
       <div class="col-md-4">
-        <label for="inputState" class="form-label">Gender</label>
+        <label for="inputState" class="form-label" i18n>Gender</label>
         <select id="inputState" class="form-select form-control" formControlName="phone">
-          <option selected disabled>Choose...</option>
+          <option selected disabled i18n>Choose...</option>
         </select>
       </div>
       <div class="text-center gap-2">
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="reset" class="btn btn-secondary" (click)="form.reset()">Reset</button>
+        <button type="submit" class="btn btn-primary" i18n>Submit</button>
+        <button type="reset" class="btn btn-secondary" (click)="form.reset()" i18n>Reset</button>
       </div>
     </form>
   `

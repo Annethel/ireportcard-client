@@ -52,11 +52,11 @@ export class SchCoursesComponent implements OnInit, FilterComponent {
 const SubjectFilterFormModel = new FormModel({
   formControls: [
     new FormControlModel({
-      label: "Name",
+      label:$localize `Name`,
       name: "name"
     }),
     new FormControlModel({
-      label: "Department",
+      label:$localize `Department`,
       name: "departmentId",
       type: "select",
       values: []

@@ -16,8 +16,8 @@ export class SchHomeComponent implements OnInit {
     {id: 101, name: 'vince', date: '01-11-23'},
   ];
   posts = [
-    {title: 'How to create class level', date: '11-06-12'},
-    {title: 'How to create subject', date: '11-12-12'},
+    {title: $localize `How to create class level`, date: '11-06-12'},
+    {title: $localize `How to create subject`, date: '11-12-12'},
   ]
 
   constructor(private _authService: AuthenticationService) {

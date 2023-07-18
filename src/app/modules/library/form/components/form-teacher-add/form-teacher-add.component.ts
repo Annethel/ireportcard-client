@@ -12,7 +12,7 @@ import {OrganisationId, SchoolId} from "../../../../../services/general/local-st
   styleUrls: ['./form-teacher-add.component.css']
 })
 export class FormTeacherAddComponent implements SubmitForm {
-  title: string = "Teacher Information";
+  title: string = $localize`Teacher Information`;
   form: FormGroup;
   @Output()
   submitEvent = new EventEmitter<UserPayload>();

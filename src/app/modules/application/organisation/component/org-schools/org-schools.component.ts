@@ -14,7 +14,7 @@ import {DataComponent} from "../../../../library/component/data.component";
 })
 export class OrgSchoolsComponent implements OnInit, DataComponent<SchoolEntity[]> {
   table?: TableModel;
-  title = "Schools";
+  title = $localize `Schools`;
   data: SchoolEntity[] = [];
   protected readonly AppRoute = AppRoute;
 

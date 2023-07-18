@@ -24,11 +24,11 @@ export class OrgSchoolsViewComponent {
     this._routerService.route = _route;
     const schoolId = this._routerService.param<number>('id');
     this._schoolService.getById(schoolId).subscribe(res => this.school = res);
-    this._localStorageService.set("school_id", schoolId);
+    this._localStorageService.set(`school_id`, schoolId);
     console.log(schoolId)
   }
 
   visitSchoolDashboardAction() {
-    this._routerService.switchDashboard("school", true);
+    this._routerService.switchDashboard(`school`, true);
   }
 }

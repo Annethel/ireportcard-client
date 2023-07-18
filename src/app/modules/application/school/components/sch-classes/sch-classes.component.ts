@@ -57,11 +57,11 @@ const ClassesFilterFormModel = new FormModel(
   {
     formControls: [
       new FormControlModel({
-        label: "Name",
+        label: $localize `Name`,
         name: "name"
       }),
       new FormControlModel({
-        label: "Section",
+        label:$localize `Section`,
         name: "sectionId",
         type: "select",
         values: []

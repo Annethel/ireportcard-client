@@ -17,7 +17,7 @@ import {SectionPayload} from "../../../../../models/payload/section.payload";
   styleUrls: ['./table-list-classes.component.css']
 })
 export class TableListClassesComponent implements DataComponent<ClassLevelPayload[]>, FilterComponent {
-  title = "Classes";
+  title = $localize `Classes`;
   data: ClassLevelPayload[] = [];
   filterForm: FormModel = ClassesFilterFormModel;
   filter: ClassLevelFilter;
@@ -54,11 +54,11 @@ const ClassesFilterFormModel = new FormModel(
   {
     formControls: [
       new FormControlModel({
-        label: "Name",
+        label:$localize `Name`,
         name: "name"
       }),
       new FormControlModel({
-        label: "Section",
+        label:$localize `Section`,
         name: "sectionId",
         type: "select",
         values: []

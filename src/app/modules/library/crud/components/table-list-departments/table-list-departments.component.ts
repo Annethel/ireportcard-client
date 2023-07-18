@@ -18,7 +18,7 @@ export class TableListDepartmentsComponent
   data: DepartmentPayload[] = [];
   filter: DepartmentFilter = new DepartmentFilter({});
   filterForm: FormModel = DepartmentFilterFormModel;
-  title: string = "Departments";
+  title: string =$localize `Departments`;
 
   constructor(
     private _departmentService: DepartmentService,
@@ -51,7 +51,7 @@ const DepartmentFilterFormModel = new FormModel(
   {
     formControls: [
       new FormControlModel({
-        label: "Name",
+        label:$localize `Name`,
         name: "name"
       }),
     ]
