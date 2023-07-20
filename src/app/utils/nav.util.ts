@@ -128,6 +128,11 @@ export module NavUtil {
         label: "Add Class",
         icon: "square-plus",
         link: "/app/school/classes/add",
+      },
+      {
+        label: "View",
+        icon: "square-plus",
+        link: "/app/school/classes/view",
       }
     ]
   }
