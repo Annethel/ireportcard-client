@@ -40,6 +40,7 @@ import {InputNumberModule} from "primeng/inputnumber";
 import {MultiSelectModule} from "primeng/multiselect";
 import {AccordionModule} from "primeng/accordion";
 import {StepsModule} from "primeng/steps";
+import { ClassAddFormComponent } from './form/components/class-add-form/class-add-form.component';
 import {ChartModule} from "primeng/chart";
 import { FormDepartmentAddComponent } from './form/components/form-department-add/form-department-add.component';
 import { TableListSatComponent } from './crud/components/table-list-sat/table-list-sat.component';
@@ -67,6 +68,7 @@ import { TableListSatComponent } from './crud/components/table-list-sat/table-li
     TableListDepartmentsComponent,
     FormDepartmentAddComponent,
     TableListDepartmentsComponent,
+    ClassAddFormComponent,
     TableListSatComponent
   ],
   exports: [
@@ -99,6 +101,7 @@ import { TableListSatComponent } from './crud/components/table-list-sat/table-li
     FormTeacherAddComponent,
     TableListClassesComponent,
     TableListDepartmentsComponent,
+    ClassAddFormComponent,
     FormDepartmentAddComponent,
     TableListSatComponent,
   ],
